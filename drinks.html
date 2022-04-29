@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Drinks @ Scrounge</title>
+		<link href="finalstyle.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<header>
+			<picture>
+				<source media="(min-width:800px)" srcset="images/scrounge.png">
+				<img src="images/scrounge_768.png" class="logo" alt="Logo for Scrounge">
+			</picture>
+			<p class="phone">Call us at <a href="tel:2095554321">(209) 555-4321!</a></p>
+		</header>
+		<nav>
+			<ul class="dropdown">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="menu.html">Menu</a>
+					<ul>
+						<li><a href="lunch.html">Lunch</a></li>
+						<li><a href="dinner.html">Dinner</a></li>
+						<li><a href="drinks.html">Drinks</a></li>
+					</ul>
+				</li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="directions.html">Directions</a></li>
+			</ul>
+		</nav>
+		<section>
+			<h1>Drinks Menu</h1>
+			<p>Served daily from 10 AM - 1 AM</p>
+			<table>				
+				<caption>Beverages</caption>
+				<colgroup>
+					<col span="3">
+				</colgroup>
+				<thead>
+				<tr>
+					<th scope="col">Main</th>
+					<th scope="col">Selection</th>
+					<th scope="col">$</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>Soda</td>
+					<td>Coke, Sprite, Root Beer</td>
+					<td>$5.75</td>
+				</tr>
+				<tr>
+					<td>Juice</td>
+					<td>Orange, Cranberry, Apple, Lemonade</td>
+					<td>$7.25</td>
+				</tr>
+				<tr>
+					<td>Water</td>
+					<td>Dasani, Arrowhead</td>
+					<td>$6.25</td>
+				</tr>
+				</tbody>
+			</table>
+			<br>
+			<br>
+			<br>
+			<table>
+				<caption>Alcohol</caption>
+				<colgroup>
+					<col span="4">
+				</colgroup>
+				<thead>
+				<tr>
+					<th scope="col">Drink</th>
+					<th scope="col">Selection</th>
+					<th scope="col">Size</th>
+					<th scope="col">$</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>Beer</td>
+					<td>Blue Moon, Lagunitas, Corona</td>
+					<td>12 oz.</td>
+					<td>$8.50</td>
+				</tr>
+				<tr>
+					<td>Wine</td>
+					<td>Gewurztraminer, Pinot Noir, Petite Sirah</td>
+					<td>5 oz.</td>
+					<td>$13.50</td>
+				</tr>
+				<tr>
+					<td>Liquor</td>
+					<td>Vodka, rum, gin, whiskey</td>
+					<td>One shot / mixed drink</td>
+					<td>$7.50</td>
+				</tr>
+				</tbody>
+			</table>
+		</section>
+		<aside>
+			<h2>Reservations</h2>
+			<p>Please call us at <a href="tel:2095554321">(209) 555-4321</a> to make a reservation, or fill out the form below. Please note that all reservations must be booked at least 48 hours in advance.</p>
+			<h3>Book a Reservation</h3>
+			<form action="https://formspree.io/f/xayaqavz" method="POST">
+					<label for="customer">Full Name</label>
+					<input type="text" name="customer" id="customer" placeholder="Name...">
+					<br>
+					<label for="guestcount">Number of Guests</label>
+					<input type="number" name="guestcount" id="guestcount" min="1" max="50" placeholder="# of guests...">
+					<br>
+					<label>Desired Experience</label><br>
+					<select name="experience">
+						<option value="french">French Food & Wine Pairing</option>
+						<option value="sushi">Supreme Sushi</option>
+						<option value="mexican">Taco Platter w/ Margaritas</option>
+					</select><br>
+					<label>Breakfast</label>
+					<input type="radio" name="restime" id="restimebreakfast" value="breakfast"><br>
+					<label>Lunch</label>
+					<input type="radio" name="restime" id="restimelunch" value="lunch"><br>
+					<label>Dinner</label>
+					<input type="radio" name="restime" id="restimedinner" value="dinner"><br>
+					<label>Dietary Restrictions (check all that apply):</label>
+					<br>
+					<input type="checkbox" name="diet" value="vegetarian">Vegetarian
+					<br>
+					<input type="checkbox" name="diet" value="vegan">Vegan
+					<br>
+					<label>Special Requests</label>
+					<br>
+					<textarea name="requests" rows="5" cols="50" placeholder="Type here..."></textarea>
+					<br>
+					<input type="submit"><input type="reset">
+			</form>
+			<p>Reservations are available for parties of four or more. A 17% gratuity will automatically be added to your bill for parties of ten or more.</p>
+			<br>
+		</aside>
+		<article>
+			<h2>Specials</h2>
+			<p>Our specials are updated weekly. Enjoy!</p>
+			<figure>
+				<img src="images/yum.png" alt="A photo of entrees.">
+				<figcaption>Food at Scrounge. Image by <a href="https://unsplash.com/@louishansel">Louis Hansel</a> via <a href="http://unsplash.com">Unsplash</a>.
+				</figcaption>
+			</figure>
+			<ul>
+				<li>$2.50 happy hour martinis</li>
+				<li>3 tacos for the price of 1</li>
+				<li>$3.00 chili fries</li>
+				<li>Unlimited pizza bread with purchase of entree</li>
+			</ul>			
+		</article>
+		<footer>
+			<details>
+				<summary>
+				Copywrite 2021 Pierce Conwi.
+				</summary>
+				<p>All Rights Reserved.</p>
+				<p>Banner background photo by <a href="https://unsplash.com/@krakenimages?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">krakenimages</a> on <a href="https://unsplash.com/s/photos/food-party?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>.</p>
+			</details>
+		</footer>
+	</body>
+</html>
